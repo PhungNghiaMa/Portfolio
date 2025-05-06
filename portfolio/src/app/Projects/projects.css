@@ -1,0 +1,54 @@
+.InProgress {
+    color : rgb(238, 188, 6);
+    font-weight: 500;
+}
+.Finished {
+    color : rgb(0, 213, 128);
+    font-weight: 500;
+}
+
+@media  screen and (min-width: 300px) and (max-width: 500px) {
+    .ProjectContainer{
+        width: 100dvw;
+        height: max-content;
+        padding: 0;
+        margin: 0;
+    }
+    .ProjectTableContainer{
+        width: 100dvw;
+        height: max-content;
+        background-color: azure;
+        padding: 0;
+        margin: 0;
+    }
+    .TableContainer{
+        overflow-x: hidden;
+    }
+    .ProjectTableHead{
+        width: 100dvw;
+        height: auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        font-size: x-small;
+        margin: 0;
+        padding: 0;
+    }
+
+    .BodyRow{
+        width: 100dvw;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        font-size: x-small;
+        justify-content: space-between;
+
+    }
+    .NameCol{
+        width: 15%;
+    }
+
+}

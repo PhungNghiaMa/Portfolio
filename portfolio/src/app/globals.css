@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+body {
+
+  background-color: rgb(255, 255, 255);
+}
+
+.Container{
+  height: 100%;
+}
+.SubContentContainer{
+  scrollbar-width: thin;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  body {
+    overflow: hidden;
+  }
+
+  .SubContentContainer {
+    height: 75vh;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+    position: relative;
+  }
+
+  .SmallNavigationContainer{
+    display: none;
+  }
+
+  .SmallNavigation{
+    display: none;
+  }
+
+  .NavContainer{
+    border-bottom: 2px solid orange;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px){
+  body{
+    height: max-content;
+    overflow-y: hidden;
+  }
+  .NavContainer{
+    height: max-content;
+  }
+  .NavBarContainer{
+    max-height: max-content;
+  }
+
+  .TransitionPage , .SecondTransitionPage{
+    height: 10dvh;
+  }
+  .ContentContainer{
+    padding-top: 20dvh;
+  }
+  .SubContentContainer{
+    overflow-x: hidden;
+    background-color: red;
+    max-height: 70dvh;
+
+  }
+
+  .Navigation{
+    display: none;
+  }
+  .NavBar{
+    display: flex;
+    flex-direction: column;
+    max-height: max-content;
+  }
+  .NameContainer{
+    display: flex;
+    position: relative;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .Name{
+    font-size: 1.4rem;
+  }
+  .RoleContainer{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 1mm;
+  }
+  .Role{
+    font-size: .9rem;
+  }
+  .NavBarContainer{
+    height: max-content;
+    position: fixed;
+    top: 0;
+    padding-top: 2dvh;
+  }
+  .SmallNavigationConainer{
+    max-height: fit-content;
+  }
+  .SmallNavigation{
+    height: auto;
+  }
+  .Introduction , .Projects , .Contacts{
+    font-size: .8rem;
+  }
+
+  .SubContentContainer {
+    height: 100%;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+    position: relative;
+  }
+
+  .PaginationCircles {
+    position: fixed;
+    bottom: 20px;
+    z-index: 10;
+    display: flex;
+    gap: 10px;
+  }
+
+  .Circle {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: gray;
+      transition: background-color 0.3s ease;
+  }
+
+
+}
+
+

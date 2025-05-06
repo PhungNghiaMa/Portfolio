@@ -1,0 +1,108 @@
+@media screen and (min-width: 1200px) {
+  .IntroContainer {
+    height: max-content;
+  }
+  .PaginationCircles {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+
+  .IntroContainer {
+    display: flex;
+    flex-direction: row; 
+    grid-row-start: auto ;
+    grid-row-end: auto;
+    overflow-x: auto; 
+    min-width: 100dvw; 
+    max-height: max-content;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    scrollbar-width: none;
+    padding: 0;
+  }
+
+  .FirstCol {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 100dvw; 
+    min-height: 60dvh;
+    max-height: 70dvh;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: end; 
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    justify-items: center;
+    justify-content: start;
+    justify-self: start;
+  }
+  .SecondCol{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 100dvw; 
+    max-height: 70dvh;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: end; 
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .AboutMeContainer,
+  .EducationContainer,
+  .ExperienceContainer,
+  .SkillContainer {
+    width: 100dvw; /* Full viewport width */
+    min-height: 60dvh; /* Full viewport height */
+    max-height: 70dvh;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ExperienceContainer {
+    background-color: aquamarine;
+  }
+
+  .SkillContainer {
+    height: 100%;
+    padding-top: 2dvh;
+    background-color: blueviolet;
+  }
+
+  .PaginationCircles {
+    position: absolute; 
+    width: 100dvw;
+    height: fit-content;
+    bottom: 120px; 
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    gap: 10px;
+    z-index: 50px;
+  } 
+
+  .Circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  } 
+
+
+
+}
+
