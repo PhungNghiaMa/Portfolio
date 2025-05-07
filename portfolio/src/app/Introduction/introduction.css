@@ -21,7 +21,8 @@
     scroll-behavior: smooth;
     overflow-y: auto;
     scrollbar-width: none;
-    padding: 0;
+    padding: 18%;
+    margin-top: 20%;
   }
 
   .FirstCol {
@@ -72,21 +73,17 @@
     margin: 0;
   }
 
-  .ExperienceContainer {
-    background-color: aquamarine;
-  }
+
 
   .SkillContainer {
     height: 100%;
-    padding-top: 2dvh;
-    background-color: blueviolet;
   }
 
   .PaginationCircles {
     position: absolute; 
     width: 100dvw;
     height: fit-content;
-    bottom: 120px; 
+    bottom: 0;
     display: flex;
     justify-content: center;
     justify-self: center;
@@ -95,12 +92,76 @@
   } 
 
   .Circle {
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     transition: background-color 0.3s ease;
     cursor: pointer;
   } 
+
+  .skills{
+    padding-left: 5dvw;
+  }
+
+
+  .SkillTableContainer{
+    padding-top: 2rem;
+    padding-left: 5dvw;
+  }
+
+  .SkillTableHead th{
+    padding-bottom: 0.5rem;
+    padding-right: 3rem;
+    font-size: large;
+  }
+
+
+  .SkillTableBody td{
+    padding-right: 4rem;
+    text-align: start;
+    padding-left: .5rem;
+    font-size: medium;
+  }
+
+  .experience{
+    padding-left: 5dvw;
+  }
+  .firstEXP{
+    padding-left: 5dvw;
+    font-size: smaller;
+    padding-top: .5rem;
+  }
+  .competition{
+    font-size: medium;
+  }
+  .education , .educationtitle{
+    padding-left: 5dvw;
+  }
+  .status{
+    font-size: smaller;
+  }
+  .major{
+    font-size: medium;
+  }
+  .school{
+    font-size: small;
+  }
+
+  .AboutMeContainer{
+    padding-left: 5dvw;
+  }
+
+  .GREETING{
+    font-size: medium;
+  }
+  .CONTENT{
+    font-size:smaller;
+  }
+
+
+
+
+
 
 
 

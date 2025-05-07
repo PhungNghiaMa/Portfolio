@@ -1,3 +1,26 @@
-.Container{
+.ContactContainer{
     min-height: 65vh;
+}
+
+@media screen and (max-width: 500px) {
+    .ContactContainer{
+        margin: 0;
+        padding-left: 5dvw;
+    }
+
+    .Contact{
+        font-size: small;
+        padding-bottom: 2dvh;
+    }
+
+    .ImgContainer{
+        width: 8dvw;
+        height: 8dvw;
+    }
+
+    .title{
+        font-size: xx-large;
+    }
+
+
 }

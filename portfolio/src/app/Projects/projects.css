@@ -7,48 +7,93 @@
     font-weight: 500;
 }
 
-@media  screen and (min-width: 300px) and (max-width: 500px) {
+
+
+@media screen and (max-width: 600px) {
+    .ProjectTable thead {
+      display: none; /* Hide table headers on mobile */
+    }
+
+
     .ProjectContainer{
-        width: 100dvw;
-        height: max-content;
-        padding: 0;
-        margin: 0;
+      padding: 0px;
+      margin: 0px;
     }
+    
     .ProjectTableContainer{
-        width: 100dvw;
-        height: max-content;
-        background-color: azure;
-        padding: 0;
-        margin: 0;
+      width: fit-content;
+      height: max-content;
+      position: relative;
     }
+
     .TableContainer{
-        overflow-x: hidden;
-    }
-    .ProjectTableHead{
-        width: 100dvw;
-        height: auto;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        justify-content: center;
-        font-size: x-small;
-        margin: 0;
-        padding: 0;
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      height: max-content;
+      justify-items: center;
+      justify-self: start;
+
     }
 
+  
+    .ProjectTable, .ProjectTable tr {
+      display: flex;
+      box-sizing: border-box;
+      width: 100dvw;
+      height: max-content;
+      flex-direction: column;
+      border: none;
+      box-sizing: border-box;
+    }
+  
+    .ProjectTable tr {
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      padding: 0.5rem;
+      background-color: #fff;
+    }
+  
+    .ProjectTable td {
+      display: flex;
+      flex-direction: row;
+      column-gap:5rem ;
+      justify-items: center;
+      justify-content: space-between;
+      width: 100%;
+      position: relative;
+      border: none;
+      text-align:right;
+      font-size: xx-small;
+    }
+  
+    .ProjectTable td::before {
+      content: attr(data-label);
+      width: 25%;
+      padding-left: 1px;
+      font-weight: bold;
+      font-style: italic;
+      font-size: x-small;
+      white-space: wrap;
+      text-align: start;
+      color: black;
+    }
     .BodyRow{
-        width: 100dvw;
-        height: max-content;
-        display: flex;
-        flex-direction: row;
-        box-sizing: border-box;
-        font-size: x-small;
-        justify-content: space-between;
+      width: 100dvw;
+      border: 2px solid black;
 
-    }
-    .NameCol{
-        width: 15%;
+      min-height: max-content;
+      box-sizing: border-box;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
     }
 
-}
+    .projects{
+      padding-left: 5dvw;
+    }
+
+  }
+  

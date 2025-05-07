@@ -60,7 +60,6 @@ body {
   }
   .SubContentContainer{
     overflow-x: hidden;
-    background-color: red;
     max-height: 70dvh;
 
   }
