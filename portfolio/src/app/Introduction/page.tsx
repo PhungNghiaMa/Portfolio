@@ -3,10 +3,9 @@ import "./introduction.css";
 import {useState , useEffect} from 'react';
 const sections = ['about' , 'education' , 'experience' , 'skills']
 
-
 export default function Introduction() {
     const [activeSection , setActiveSection] = useState('about');
-    const _activeSection = activeSection;
+    activeSection === ""
     useEffect(() => {
         const observerOptions = {
           root: null,
