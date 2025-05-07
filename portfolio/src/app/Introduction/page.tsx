@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import "./introduction.css";
 import {useState , useEffect} from 'react';
 const sections = ['about' , 'education' , 'experience' , 'skills']
@@ -6,6 +6,7 @@ const sections = ['about' , 'education' , 'experience' , 'skills']
 
 export default function Introduction() {
     const [activeSection , setActiveSection] = useState('about');
+    const _activeSection = activeSection;
     useEffect(() => {
         const observerOptions = {
           root: null,
@@ -166,7 +167,7 @@ export default function Introduction() {
             </div>         
             </div>
             <div className="PaginationCircles">
-                        {sections.map((sectionId, index) => (
+                        {sections.map((sectionId) => (
                             <a key={sectionId} href={`#${sectionId}`}>
                             <div
                                 data-section = {sectionId}

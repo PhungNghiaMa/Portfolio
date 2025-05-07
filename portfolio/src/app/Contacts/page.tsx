@@ -1,7 +1,4 @@
-import phone from "/phone.png";
-import gmail from "/gmail.png";
 import Image from "next/image";
-import Link from "next/link";
 import "./contact.css";
 
 export default function Contacts() {
@@ -15,7 +12,7 @@ export default function Contacts() {
                     <Image className="ImgContainer" src={"/phone.png"} alt="Phone_Icon" width={50} height={50} />
                     <span className="text-md font-semibold italic">0934153439</span>
                 </div>
-                <div className="PhoneContact Contact w-full h-auto flex flex-row row-auto py-2 items-center gap-5">
+                <div className="GmailContact Contact w-full h-auto flex flex-row row-auto py-2 items-center gap-5">
                     <Image className="ImgContainer" src={"/gmail.png"} alt="Gmail_Icon" width={50} height={50} />
                     <a href="mailto:phungnghia291@gmail.com" className="text-md font-semibold italic">
                         phungnghia291@gmail.com
